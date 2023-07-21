@@ -14,4 +14,7 @@
 <button (click)="buttonClick()">event-bind</button>
 
 <!-- event filtering and template variable(starts with #, e.g #inputbox)-->
-<input type="text" (keyup.enter)="onKeyUp(inputbox.value)" placeholder="keyup" #inputbox/>
+<!-- <input type="text" (keyup.enter)="onKeyUp(inputbox.value)" placeholder="keyup" #inputbox/> -->
+
+<!-- two way data binding -->
+<input type="text" [(ngModel)]="inputValue" (keyup.enter)="onKeyUp()" placeholder="keyup" />
