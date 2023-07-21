@@ -16,4 +16,13 @@ export class PostListComponent {
     this.messageEvent.emit(this.message);
     
   }
+  buttonClick(){
+    console.log("bamabzoo")
+  }
+
+  onKeyUp(inputValue:string){
+    console.log(inputValue);
+    
+    
+  }
 }
