@@ -20,8 +20,8 @@ export class PostListComponent {
     console.log("bamabzoo")
   }
 
-  onKeyUp(){
-    console.log('enter key pressed');
+  onKeyUp(inputValue:string){
+    console.log(inputValue);
     
     
   }

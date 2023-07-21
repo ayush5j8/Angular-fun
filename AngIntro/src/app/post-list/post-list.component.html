@@ -13,5 +13,5 @@
 <!-- event binding -->
 <button (click)="buttonClick()">event-bind</button>
 
-<!-- event filtering -->
-<input type="text" (keyup.enter)="onKeyUp()" placeholder="keyup"/>
+<!-- event filtering and template variable(starts with #, e.g #inputbox)-->
+<input type="text" (keyup.enter)="onKeyUp(inputbox.value)" placeholder="keyup" #inputbox/>
