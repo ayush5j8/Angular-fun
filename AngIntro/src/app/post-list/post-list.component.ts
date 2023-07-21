@@ -19,4 +19,10 @@ export class PostListComponent {
   buttonClick(){
     console.log("bamabzoo")
   }
+
+  onKeyUp(){
+    console.log('enter key pressed');
+    
+    
+  }
 }
