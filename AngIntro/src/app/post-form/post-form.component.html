@@ -1,0 +1,19 @@
+<div class="form-area">
+    <h1>Post Form</h1>
+    <br><br>
+    <input type="text" placeholder="title" [(ngModel)]="title">
+    <br><br>
+    <textarea id="" cols="30" rows="10" placeholder="details" [(ngModel)]="details"></textarea>
+    <br><br>
+    <input type="text" placeholder="img link" [(ngModel)]="imgUrl" >
+    <br><br>
+    <input type="text" placeholder="links" [(ngModel)]="links">
+    <br><br>
+    <input type="checkbox" [(ngModel)]="isChecked"> Add background
+</div>
+<div class="output">
+    <h1><span [style.backgroundColor]="isChecked?'yellow':''">{{title}}</span></h1>
+    <p>{{details}}</p>
+    <img [src]="imgUrl" alt="">
+    <a [href]="links" [style.display]="links?'block':'none' ">More details</a>
+</div>
