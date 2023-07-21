@@ -16,4 +16,7 @@ export class PostListComponent {
     this.messageEvent.emit(this.message);
     
   }
+  buttonClick(){
+    console.log("bamabzoo")
+  }
 }
