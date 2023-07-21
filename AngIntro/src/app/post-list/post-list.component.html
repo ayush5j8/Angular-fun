@@ -1,2 +1,11 @@
 <h1>{{fromParent}}</h1>
 <button (click)="sendMessage()">send</button>
+
+<!-- property binding -->
+<img [src]="imgUrl" alt="Property binding img">
+
+<!-- class binding -->
+<div [class.text-red]="flag">Class Binding</div>
+
+<!-- style binding -->
+<div [style.Color]="flag?'green':'pink'">Style Binding</div>
