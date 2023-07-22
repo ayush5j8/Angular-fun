@@ -1,12 +1,13 @@
 <ul>
-    <li *ngFor="let ele of myArray">
+    <!-- ngFor used to get the index -->
+    <li *ngFor="let ele of myArray; let i=index">
         {{ele}}
-        <button (click)="delItem(ele)">Delete</button>
+        <button (click)="delItem(i)">Delete</button>
     </li>
 </ul>
 <ul>
     <li *ngFor="let obj of objArray">{{obj.name}}</li>
 </ul>
 
-<!-- change detection -->
+<!-- change detection: whenevr an event triggers angular looks for changes -->
 <button (click)="addNew()">Add new item</button>

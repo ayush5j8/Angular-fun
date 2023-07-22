@@ -16,7 +16,7 @@ export class DirectivesComponent {
   addNew(){
     this.myArray.push('bingo')
   }
-  delItem(ele:string){
-    this.myArray.splice(this.myArray.indexOf(ele),1)
+  delItem(i:number){
+    this.myArray.splice(i,1)
   }
 }
