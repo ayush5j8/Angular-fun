@@ -7,6 +7,7 @@ import {NavbarComponent} from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostFormComponent } from './post-form/post-form.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PostFormComponent } from './post-form/post-form.component';
     NavbarComponent,
     PostComponent,
     PostListComponent,
-    PostFormComponent
+    PostFormComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
