@@ -1,0 +1,58 @@
+<!-- display a message when array is empty=>>>>  ngIf
+
+<div *ngIf="myArray.length>0; else noElementMessage">
+    <ul>
+         ngFor used to get the index -->
+        <!-- <li *ngFor="let ele of myArray; let i=index">
+            {{ele}}
+            <button (click)="delItem(i)">Delete</button>
+        </li>
+    </ul>
+</div> -->
+<!-- change detection: whenevr an event triggers angular looks for changes -->
+<!-- <button (click)="addNew()">Add new item</button> -->
+<!-- we can use else statement in the first ngif, conditional rendering using ng-template (template-variable) with structural directive (ngIf/ngFor) -->
+
+<!-- <ng-template #noElementMessage>
+    <p>No elements yet</p>
+</ng-template> -->
+<!-- <div *ngIf="myArray.length===0">
+    <p>No elements yet</p>
+</div> -->
+
+<!-- <ul>
+    <li *ngFor="let obj of objArray">{{obj.name}}</li>
+</ul> -->
+
+<!-- using ngswitchcase -->
+<!-- <div>
+    <button (click)="showOption('step-1')">step-1</button>
+    <button (click)="showOption('step-2')">step-2</button>
+    <button (click)="showOption('step-3')">step-3</button>
+</div>
+<div [ngSwitch]="option">
+    <p *ngSwitchCase="'step-1'">Step-1 works!</p>
+    <p *ngSwitchCase="'step-2'">Step-2 works!</p>
+    <p *ngSwitchCase="'step-3'">Step-3 works!</p>
+    <p *ngSwitchDefault>Something works!</p>
+</div> -->
+
+<!-- ngStyle for conditional css in json format, we use [] rather than * -->
+<div [ngStyle]="{
+    color:isActive?'green':'black',
+    backgroundColor:isActive?'orange':'',
+    opacity:isActive?'0.7':'0.3'
+}">
+    ngStyle Directive
+</div>
+
+<!-- ngClass directive -->
+<div [ngClass]="{
+    'main':isActive,
+    'text-weight':isActive
+}">
+a quick brown fox
+</div>
+
+
+
