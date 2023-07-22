@@ -12,4 +12,11 @@ export class DirectivesComponent {
     {id:1,name:'Mukesh'},
     {id:2,name:'Rakesh'}
   ]
+
+  addNew(){
+    this.myArray.push('bingo')
+  }
+  delItem(ele:string){
+    this.myArray.splice(this.myArray.indexOf(ele),1)
+  }
 }

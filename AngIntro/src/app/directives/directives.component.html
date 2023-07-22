@@ -1,6 +1,12 @@
 <ul>
-    <li *ngFor="let ele of myArray">{{ele}}</li>
+    <li *ngFor="let ele of myArray">
+        {{ele}}
+        <button (click)="delItem(ele)">Delete</button>
+    </li>
 </ul>
 <ul>
     <li *ngFor="let obj of objArray">{{obj.name}}</li>
 </ul>
+
+<!-- change detection -->
+<button (click)="addNew()">Add new item</button>
