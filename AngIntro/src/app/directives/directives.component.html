@@ -1,6 +1,6 @@
 <!-- display a message when array is empty=>>>>  ngIf -->
 
-<div *ngIf="myArray.length>0">
+<div *ngIf="myArray.length>0; else noElementMessage">
     <ul>
         <!-- ngFor used to get the index -->
         <li *ngFor="let ele of myArray; let i=index">
@@ -11,14 +11,17 @@
 </div>
 <!-- change detection: whenevr an event triggers angular looks for changes -->
 <button (click)="addNew()">Add new item</button>
-<div *ngIf="myArray.length===0">
+<ng-template #noElementMessage>
     <p>No elements yet</p>
-</div>
+</ng-template>
+<!-- <div *ngIf="myArray.length===0">
+    <p>No elements yet</p>
+</div> -->
 
 <ul>
     <li *ngFor="let obj of objArray">{{obj.name}}</li>
 </ul>
 
-
+<!-- intead of using another ngif we can use else statement in the first ngif ang ng-template -->
 
 
