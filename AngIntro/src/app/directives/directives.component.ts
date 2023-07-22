@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class DirectivesComponent {
   option:string='meow';
   myArray:string[]=['hi','hello','Bye']
+  isActive:boolean=true;
   objArray:any[]=[
     {id:1,name:'Mukesh'},
     {id:2,name:'Rakesh'}

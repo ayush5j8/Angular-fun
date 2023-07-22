@@ -25,7 +25,7 @@
 </ul> -->
 
 <!-- using ngswitchcase -->
-<div>
+<!-- <div>
     <button (click)="showOption('step-1')">step-1</button>
     <button (click)="showOption('step-2')">step-2</button>
     <button (click)="showOption('step-3')">step-3</button>
@@ -35,6 +35,15 @@
     <p *ngSwitchCase="'step-2'">Step-2 works!</p>
     <p *ngSwitchCase="'step-3'">Step-3 works!</p>
     <p *ngSwitchDefault>Something works!</p>
+</div> -->
+
+<!-- ngStyle for conditional css in json format, we use [] rather than * -->
+<div [ngStyle]="{
+    color:isActive?'green':'black',
+    backgroundColor:isActive?'orange':'',
+    opacity:isActive?'0.7':'0.3'
+}">
+    ngStyle Directive
 </div>
 
 
