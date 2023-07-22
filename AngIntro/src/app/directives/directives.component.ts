@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
-
+  option:string='meow';
   myArray:string[]=['hi','hello','Bye']
   objArray:any[]=[
     {id:1,name:'Mukesh'},
@@ -18,5 +18,8 @@ export class DirectivesComponent {
   }
   delItem(i:number){
     this.myArray.splice(i,1)
+  }
+  showOption(option:string){
+    this.option=option
   }
 }
