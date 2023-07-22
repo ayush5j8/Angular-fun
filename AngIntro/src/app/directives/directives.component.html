@@ -1,13 +1,24 @@
-<ul>
-    <!-- ngFor used to get the index -->
-    <li *ngFor="let ele of myArray; let i=index">
-        {{ele}}
-        <button (click)="delItem(i)">Delete</button>
-    </li>
-</ul>
+<!-- display a message when array is empty=>>>>  ngIf -->
+
+<div *ngIf="myArray.length>0">
+    <ul>
+        <!-- ngFor used to get the index -->
+        <li *ngFor="let ele of myArray; let i=index">
+            {{ele}}
+            <button (click)="delItem(i)">Delete</button>
+        </li>
+    </ul>
+</div>
+<!-- change detection: whenevr an event triggers angular looks for changes -->
+<button (click)="addNew()">Add new item</button>
+<div *ngIf="myArray.length===0">
+    <p>No elements yet</p>
+</div>
+
 <ul>
     <li *ngFor="let obj of objArray">{{obj.name}}</li>
 </ul>
 
-<!-- change detection: whenevr an event triggers angular looks for changes -->
-<button (click)="addNew()">Add new item</button>
+
+
+
