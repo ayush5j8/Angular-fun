@@ -1,4 +1,4 @@
-<div class="form-area">
+<!-- <div class="form-area">
     <h1>Post Form</h1>
     <br><br>
     <input type="text" placeholder="title" [(ngModel)]="title">
@@ -16,4 +16,39 @@
     <p>{{details}}</p>
     <img [src]="imgUrl" alt="">
     <a [href]="links" [style.display]="links?'block':'none' ">More details</a>
+</div> -->
+
+
+<!-- for css style attributes, we use them in ' ' and Ts properties without '' -->
+<div>
+    <input type="text" placeholder="Name" [ngClass]="'inputFields'" [(ngModel)]="name"><br><br>
+    <input type="text" placeholder="E-MAIL" [ngClass]="'inputFields'" [(ngModel)]="email"><br><br>
+    <textarea rows="10" cols="30" placeholder="Address" [(ngModel)]="address"></textarea><br><br>
+    <button (click)="onSave()">Save</button>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th [ngClass]="'cellGap'">#</th>
+            <th [ngClass]="'cellGap'">Name</th>
+            <th [ngClass]="'cellGap'">Email</th>
+            <th [ngClass]="'cellGap'">Address</th>
+            <th [ngClass]="'cellGap'">Action</th>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <table>
+        <tr *ngFor="let ele of myArray; let i=index">
+            <td [ngClass]="'cellGap'">{{i+1}}</td>
+            <td [ngClass]="'cellGap'">{{ele.Name}}</td>
+            <td [ngClass]="'cellGap'">{{ele.Email}}</td>
+            <td [ngClass]="'cellGap'">{{ele.Address}}</td>
+            <td [ngClass]="'cellGap'">
+                <button (click)="onDelete(i)">Delete</button>
+            </td>
+        </tr>
+    </table>
 </div>

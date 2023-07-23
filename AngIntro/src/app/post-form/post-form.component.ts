@@ -6,9 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent {
-  title!:string;
-  details!:string;
-  imgUrl!:string;
-  links!:string;
-  isChecked!:boolean;
+  // title!:string;
+  // details!:string;
+  // imgUrl!:string;
+  // links!:string;
+  // isChecked!:boolean;
+  name!:string;
+  email!:string;
+  address!:string;
+  myArray:any[]=[];
+
+  onSave(){
+    this.myArray.push(
+      {
+        "Name":this.name,
+        "Email":this.email,
+        "Address":this.address
+      }
+    );
+  }
+  onDelete(i:number){
+    this.myArray.splice(i,1);
+  }
 }
