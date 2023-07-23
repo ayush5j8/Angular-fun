@@ -9,6 +9,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { AppendPipe } from './customPipe/append.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PipesComponent } from './pipes/pipes.component';
     PostListComponent,
     PostFormComponent,
     DirectivesComponent,
-    PipesComponent
+    PipesComponent,
+    AppendPipe
   ],
   imports: [
     BrowserModule,
