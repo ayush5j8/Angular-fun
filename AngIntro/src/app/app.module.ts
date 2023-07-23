@@ -10,6 +10,8 @@ import { PostFormComponent } from './post-form/post-form.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { AppendPipe } from './customPipe/append.pipe';
+import { AppendCLIPipe } from './customPipe/append-cli.pipe';
+import { ReduceToNPipe } from './customPipe/reduce-to-n.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AppendPipe } from './customPipe/append.pipe';
     PostFormComponent,
     DirectivesComponent,
     PipesComponent,
-    AppendPipe
+    AppendPipe,
+    AppendCLIPipe,
+    ReduceToNPipe
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes.component.css']
 })
 export class PipesComponent {
-  title:string="EEna Meena Dika";
+  title:string="EEna Meena Dika ram pam posh ram pam posh";
   intNum:number=12345678;
   decNumber:number=12.56789;
   currDate:Date=new Date()
