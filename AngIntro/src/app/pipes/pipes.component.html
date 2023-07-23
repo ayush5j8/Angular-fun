@@ -1,1 +1,21 @@
-<p>pipes works!</p>
+<!-- uppercase and lowercase pipes -->
+<h1>{{title | lowercase}}</h1>
+
+<!-- decimal/number pipes , decimal pipes rounds off the number -->
+<h1>{{intNum | number}}</h1>
+<h1>{{decNumber | number:'1.1-2'}}</h1>
+
+<!-- currency pipe , flase property for getting the code instead of Symbol and vice versa-->
+<h1>{{decNumber | currency:'INR':false:'1.1-1'}}</h1>
+
+<!-- Date pipe  -->
+<h1>{{currDate | date:'shortDate'}}</h1>
+
+<!-- json pipe  -->
+<h1>{{obj | json}}</h1>
+
+<!-- precent pipe  -->
+<h1>{{perc | percent:'1.2-3'}}</h1>
+
+<!-- slice pipe  -->
+<h1>{{myArray | slice :0:3}}</h1>

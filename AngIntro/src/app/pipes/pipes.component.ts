@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes.component.css']
 })
 export class PipesComponent {
-
+  title:string="EEna Meena Dika";
+  intNum:number=12345678;
+  decNumber:number=12.56789;
+  currDate:Date=new Date()
+  obj:Object={id:1,value:'machika'};
+  perc:number=0.289789;
+  myArray:string[]=['Ming','hing','ding','Dong'];
 }
